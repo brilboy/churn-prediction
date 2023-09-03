@@ -26,7 +26,6 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-
 # Logistic Regression
 logistic_regression = LogisticRegression()
 param_grid_lr = {

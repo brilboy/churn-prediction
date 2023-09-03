@@ -5,3 +5,4 @@ seaborn
 sklearn
 scikit-learn
 joblib
+flask

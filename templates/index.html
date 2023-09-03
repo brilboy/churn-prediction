@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour & Travels Customer Churn Prediction</title>
+</head>
+<body>
+    <h1>Tour & Travels Customer Churn Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="frequent_flyer">Do you join Frequent Flyer program?</label>
+        <select id="frequent_flyer" name="frequent_flyer">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        
+        <label for="annual_income">How much your Annual Income (SG$)?</label>
+        <input type="number" id="annual_income" name="annual_income" required><br><br>
+        
+        <label for="services_opted">How many Services Opted do you take?</label>
+        <input type="number" id="services_opted" name="services_opted" min="1" max="6" required><br><br>
+        
+        <label for="social_media_synced">Are you Synced your Account To Social Media?</label>
+        <select id="social_media_synced" name="social_media_synced">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <label for="booked_hotel">Have you already Booked Hotel?</label>
+        <select id="booked_hotel" name="booked_hotel">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
