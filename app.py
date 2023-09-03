@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import joblib
 import numpy as np
+import os
 
 app = Flask(__name__)
 
@@ -14,7 +15,8 @@ def categorize_income(income):
         return 'high'
 
 # Load the trained model
-model = joblib.load('src\model\knn_model.pkl')
+knn_model = os.path.join(os.getcwd(), 'src', 'model', 'knn_model.pkl')
+model = joblib.load(knn_model) 
 
 @app.route('/')
 def homepage():
